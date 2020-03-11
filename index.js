@@ -3,7 +3,13 @@ const express = require('express');
 const server = express();
 
 //declarando variável para as tarefas
-var tarefas = [];
+var tarefas = [
+    {
+        id: 1,
+        descrição: "comprar pão",
+        finalizado: false
+    }
+];
 
 // middlewares:
 server.use(express.json());

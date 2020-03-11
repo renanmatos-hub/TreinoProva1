@@ -71,4 +71,4 @@ return res.send();
 
 
 //colocar o servidor para ficar ouvindo a porta 3000
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
